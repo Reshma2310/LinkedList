@@ -41,5 +41,20 @@ namespace LinkedList
                 temp = temp.next;
             }
         }
+        public void AddFirst(int data)
+        {
+            Node newNode = new Node(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node temp = head;
+                head = newNode;
+                head.next = temp;
+            }
+            Console.WriteLine("{0} is added to {1} in Linked List",newNode.data,head.next.data);
+        }        
     }
 }

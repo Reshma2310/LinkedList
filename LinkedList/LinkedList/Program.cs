@@ -9,9 +9,9 @@ namespace LinkedList
         {
             Console.WriteLine("Hello, World!");
             LinkedListClass list = new LinkedListClass();
-            list.Add(56);
-            list.Add(30);
             list.Add(70);
+            list.AddFirst(30);
+            list.AddFirst(56);
             list.Display();
         }
     }
