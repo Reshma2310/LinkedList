@@ -114,6 +114,25 @@ namespace LinkedList
             this.head = this.head.next;
             Console.WriteLine("First Value is Removed from Linked List");
             return this.head;           
-        }        
+        }
+        public Node RemoveLastNode(int value)
+        {
+            if (head == null)
+            {
+                return null;
+            }
+            if (head.next == null)
+            {
+                return null;
+            }
+            Node NewNode = head;
+            while (NewNode.next.next != null)
+            {
+                NewNode = NewNode.next;
+            }
+            NewNode.next = null;
+            Console.WriteLine("Last Value is Removed from Linked List");
+            return head;
+        }
     }
 }
