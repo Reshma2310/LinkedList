@@ -105,5 +105,15 @@ namespace LinkedList
             }
             return count;
         }
+        public Node RemoveFirstNode(int value)
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            Console.WriteLine("First Value is Removed from Linked List");
+            return this.head;           
+        }        
     }
 }

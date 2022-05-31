@@ -16,6 +16,8 @@ namespace LinkedList
             int place = list.Search(56);            
             list.InsertAtPosition(place + 1, 30);
             list.Display();
+            list.RemoveFirstNode(56);
+            list.Display();
         }
     }
 }
